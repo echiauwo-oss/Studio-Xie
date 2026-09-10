@@ -1,0 +1,77 @@
+body {
+    background-color: #F2F0E6;
+    color: #1C1C1E
+    margin: 0;
+}
+
+/* Navigation header */
+
+.nav-link-color{
+    color: #6E6E73
+}
+
+    .nav-link-color a:hover {
+        color:#8B9A8B
+    }
+
+
+/* Hero text and main body sectional */
+
+.hero-headline{
+    color: #1C1C1E
+}
+
+.hero-subtext{
+    color: #6E6E73
+}
+
+.time-slot-text{
+    color:#1C1C1E
+}
+
+/* KEEP THIS FOR ANOTHER TIME: BOOKING TIME BUTTON
+.time-slot-button {
+    background-color: #a7a7ac;
+    border: 1px solid #1C1C1E
+};
+
+    .time-slot-button:hover {
+    background-color: #8B9A8B
+    } 
+
+/* 
+
+/* Service Directory Components */
+
+.service-card {
+    border-color: #1C1C1E; 
+    color: #1C1C1E;
+}
+.service-card:hover {
+    background-color: rgba(28, 28, 30, 0.05); 
+}
+.service-price {
+    color: #8B9A8B; 
+}
+
+/* Policy & Footer Components */
+
+.policy-text {
+    color: #6E6E73;
+}
+.footer-container {
+    border-top-color: #1C1C1E;
+    color: #6E6E73;
+}
+
+/* Brutalist Form Components */
+
+.form-input {
+    background-color: transparent;
+    border: 1px solid #1C1C1E;
+    color: #1C1C1E;
+}
+.form-input:focus {
+    outline: none;
+    border-color: #8B9A8B;
+}
