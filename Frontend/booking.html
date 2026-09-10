@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIO XIE // BOOKING</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F2F0E6] text-[#1C1C1E]">
+    
+    <!-- Header Navigation -->
+    <header class="flex justify-between items-center py-6 border-b border-[#1C1C1E] max-w-5xl mx-auto w-full px-4">
+        <a href="index.html" class="font-mono font-bold tracking-widest hover:text-[#8B9A8B] transition-colors">
+            STUDIO XIE // INTAKE
+        </a>
+
+        <nav class="flex gap-6 font-mono text-sm">
+            <a href="index.html" class="transition-colors hover:text-[#8B9A8B]">// HOME</a>
+            <a href="gallery.html" class="transition-colors hover:text-[#8B9A8B]">// GALLERY</a>
+            <a href="policies.html" class="transition-colors hover:text-[#8B9A8B]">// POLICIES</a>
+            <a href="booking.html" class="text-[#8B9A8B] font-bold border-b border-[#8B9A8B] pb-1">// BOOKING</a>
+        </nav>
+    </header>
+
+    <!-- Main Booking Container -->
+    <main class="max-w-5xl mx-auto w-full py-16 px-4">
+        
+        <!-- Header Matrix -->
+        <div class="mb-12 border-b border-[#1C1C1E] pb-8">
+            <span class="font-mono text-xs tracking-widest uppercase mb-2 block">
+                // SYSTEM_INTAKE_PROTOCOL
+            </span>
+            <h2 class="text-4xl font-bold tracking-tight mb-4">
+                Initialize Build Request
+            </h2>
+            <p class="text-sm max-w-xl">
+                Secure a drop-off window at The Saint James. Ensure you have read the operational boundaries before submitting an intake request.
+            </p>
+        </div>
+
+        <!-- Brutalist Form -->
+        <form class="flex flex-col gap-6 max-w-2xl mb-24">
+            <input type="text" placeholder="NAME / ALIAS" class="bg-transparent border border-[#1C1C1E] p-4 font-mono text-sm outline-none focus:border-[#8B9A8B] transition-colors" required>
+            <input type="email" placeholder="EMAIL ADDRESS" class="bg-transparent border border-[#1C1C1E] p-4 font-mono text-sm outline-none focus:border-[#8B9A8B] transition-colors" required>
+            
+            <select class="bg-transparent border border-[#1C1C1E] p-4 font-mono text-sm outline-none focus:border-[#8B9A8B] transition-colors appearance-none" required>
+                <option value="" disabled selected>[ SELECT SERVICE ROUTINE ]</option>
+                <option value="pc_standard">Standard PC Assembly ($95)</option>
+                <option value="pc_whiteglove">White Glove Blueprint ($125)</option>
+                <option value="pc_enthusiast">Enthusiast Assembly ($180)</option>
+                <option value="kb_hotswap">Hotswap Keyboard Build ($30 + $0.20/sw)</option>
+                <option value="kb_tune">Keyboard Acoustic Tune ($30)</option>
+                <option value="mouse_mod">Bespoke Mouse Overhaul ($75)</option>
+            </select>
+            
+            <textarea placeholder="HARDWARE SPECS & OBJECTIVES (Include PCPartPicker link if applicable)" rows="6" class="bg-transparent border border-[#1C1C1E] p-4 font-mono text-sm outline-none focus:border-[#8B9A8B] transition-colors" required></textarea>
+            
+            <div class="flex items-start gap-3 mt-2">
+                <input type="checkbox" id="tos" class="mt-1 border-[#1C1C1E] appearance-none w-4 h-4 border checked:bg-[#8B9A8B]" required>
+                <label for="tos" class="text-xs font-mono leading-relaxed">
+                    I acknowledge the zero-inventory model and agree to the hardware liability waiver capping liability strictly to service fees.
+                </label>
+            </div>
+            
+            <button type="submit" class="font-mono text-sm font-bold tracking-widest border border-[#1C1C1E] px-8 py-4 transition-all mt-4 w-fit hover:bg-[#1C1C1E]/5 hover:text-[#8B9A8B]">
+                SUBMIT SYSTEM REQUEST
+            </button>
+        </form>
+
+        <!-- Direct Inquiries Section -->
+        <div class="border-t border-[#1C1C1E] pt-12">
+            <h3 class="font-mono text-sm tracking-widest font-bold uppercase mb-4">
+                // DIRECT_INQUIRIES
+            </h3>
+            <p class="text-sm max-w-xl mb-6 leading-relaxed">
+                For custom inquiries falling outside standard service tiers, or to follow up on an existing build, initiate contact via our primary comms channel.
+            </p>
+            <a href="mailto:studioxie.official@gmail.com" class="font-mono text-sm font-bold text-[#1C1C1E] hover:text-[#8B9A8B] transition-colors border-b border-[#1C1C1E] pb-1 hover:border-[#8B9A8B]">
+                studioxie.official@gmail.com
+            </a>
+        </div>
+    </main>
+
+<!-- Global Direct Inquiries & Footer -->
+    <div class="max-w-5xl mx-auto w-full px-4">
+        
+        <!-- Direct Inquiries Module -->
+        <div class="border-t border-[#1C1C1E] pt-12 pb-12">
+            <h3 class="font-mono text-sm tracking-widest font-bold uppercase mb-4">
+                // DIRECT_INQUIRIES
+            </h3>
+            <p class="text-sm max-w-xl mb-6 leading-relaxed">
+                For custom inquiries falling outside standard service tiers, or to follow up on an existing build, initiate contact via our primary comms channel.
+            </p>
+            <a href="mailto:studioxie.official@gmail.com" class="font-mono text-sm font-bold text-[#1C1C1E] hover:text-[#8B9A8B] transition-colors border-b border-[#1C1C1E] pb-1 hover:border-[#8B9A8B]">
+                studioxie.official@gmail.com
+            </a>
+        </div>
+
+        <!-- System Footer -->
+        <footer class="border-t border-[#1C1C1E] py-12 w-full flex flex-col md:flex-row justify-between items-start md:items-center font-mono text-xs text-[#6E6E73]">
+            <p>© 2026 STUDIO XIE. ALL RIGHTS RESERVED.</p>
+            <p class="mt-4 md:mt-0 uppercase">LONDON, ON [THE SAINT JAMES]</p>
+        </footer>
+        
+    </div>
+
+</body>
+</html>
