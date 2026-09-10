@@ -23,7 +23,7 @@
         </nav>
     </header>
 
-    <!-- Main Booking Container -->
+    <!-- Main Booking Routing -->
     <main class="max-w-5xl mx-auto w-full py-16 px-4">
         
         <!-- Header Matrix -->
@@ -39,25 +39,27 @@
             </p>
         </div>
 
-        <!-- Brutalist Form -->
-        <form class="flex flex-col gap-6 max-w-2xl mb-24">
-            <input type="text" placeholder="NAME / ALIAS" class="bg-transparent border border-[#1C1C1E] p-4 font-mono text-sm outline-none focus:border-[#8B9A8B] transition-colors" required>
-            <input type="email" placeholder="EMAIL ADDRESS" class="bg-transparent border border-[#1C1C1E] p-4 font-mono text-sm outline-none focus:border-[#8B9A8B] transition-colors" required>
+        <!-- Information Intake with Serverless Routing -->
+        <form action="YOUR_FORMSPREE_ENDPOINT_URL_HERE" method="POST" class="flex flex-col gap-6 max-w-2xl mb-24">
             
-            <select class="bg-transparent border border-[#1C1C1E] p-4 font-mono text-sm outline-none focus:border-[#8B9A8B] transition-colors appearance-none" required>
+            <input type="text" name="Client_Name" placeholder="NAME / ALIAS" class="bg-transparent border border-[#1C1C1E] p-4 font-mono text-sm outline-none focus:border-[#8B9A8B] transition-colors" required>
+            
+            <input type="email" name="Reply_Email" placeholder="EMAIL ADDRESS" class="bg-transparent border border-[#1C1C1E] p-4 font-mono text-sm outline-none focus:border-[#8B9A8B] transition-colors" required>
+            
+            <select name="Requested_Service" class="bg-transparent border border-[#1C1C1E] p-4 font-mono text-sm outline-none focus:border-[#8B9A8B] transition-colors appearance-none" required>
                 <option value="" disabled selected>[ SELECT SERVICE ROUTINE ]</option>
-                <option value="pc_standard">Standard PC Assembly ($95)</option>
-                <option value="pc_whiteglove">White Glove Blueprint ($125)</option>
-                <option value="pc_enthusiast">Enthusiast Assembly ($180)</option>
-                <option value="kb_hotswap">Hotswap Keyboard Build ($30 + $0.20/sw)</option>
-                <option value="kb_tune">Keyboard Acoustic Tune ($30)</option>
-                <option value="mouse_mod">Bespoke Mouse Overhaul ($75)</option>
+                <option value="pc_standard">Standard PC Assembly</option>
+                <option value="pc_whiteglove">White Glove Blueprint</option>
+                <option value="pc_enthusiast">Enthusiast Assembly</option>
+                <option value="kb_hotswap">Hotswap Keyboard Build</option>
+                <option value="kb_tune">Keyboard Acoustic Tune</option>
+                <option value="mouse_mod">Bespoke Mouse Overhaul</option>
             </select>
             
-            <textarea placeholder="HARDWARE SPECS & OBJECTIVES (Include PCPartPicker link if applicable)" rows="6" class="bg-transparent border border-[#1C1C1E] p-4 font-mono text-sm outline-none focus:border-[#8B9A8B] transition-colors" required></textarea>
+            <textarea name="Hardware_Specs" placeholder="HARDWARE SPECS & OBJECTIVES" rows="6" class="bg-transparent border border-[#1C1C1E] p-4 font-mono text-sm outline-none focus:border-[#8B9A8B] transition-colors" required></textarea>
             
             <div class="flex items-start gap-3 mt-2">
-                <input type="checkbox" id="tos" class="mt-1 border-[#1C1C1E] appearance-none w-4 h-4 border checked:bg-[#8B9A8B]" required>
+                <input type="checkbox" name="TOS_Agreement" id="tos" value="Agreed" class="mt-1 border-[#1C1C1E] appearance-none w-4 h-4 border checked:bg-[#8B9A8B]" required>
                 <label for="tos" class="text-xs font-mono leading-relaxed">
                     I acknowledge the zero-inventory model and agree to the hardware liability waiver capping liability strictly to service fees.
                 </label>
